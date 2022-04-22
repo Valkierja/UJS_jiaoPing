@@ -3,12 +3,14 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.4
 // @description  江苏大学教务系统的自动评教脚本
-// @author       You
+// @author       KSroido
+// @homepageURL  https://github.com/KSroido/UJS_jiaoPing/
+// @supportURL   https://github.com/KSroido/UJS_jiaoPing/issues/
+// @downloadURL  https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/master/main.user.js
+// @updateURL    https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/master/main.user.js
 // @match        https://webvpn.ujs.edu.cn/http/*/xsjxpj2_2.aspx*
 // @grant        none
 // ==/UserScript==
-
-//自动评教
 
 function autoPj() {
     var rad_a,rad_b;
