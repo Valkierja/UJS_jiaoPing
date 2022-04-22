@@ -18,7 +18,7 @@ function autoPj() {
     {
         document.getElementById(rad_a+i+rad_b).checked = true;
     }
-    document.getElementById("Datagrid1:__ctl8:rb").checked = true;
-    //document.getElementById("txt_pjxx").value = '老师备课充分，授课重点突出。';
+    //document.getElementById("Datagrid1:__ctl8:rb").checked = true;
+    document.getElementById("txt_pjxx").value = '老师备课充分，授课重点突出。';
     document.getElementById("Button1").click();
 } autoPj();
