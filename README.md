@@ -4,12 +4,12 @@
 
 基于此失效项目改编而来：https://greasyfork.org/en/scripts/39472-ujs-pj
 
-
 [![L29iXq.png](https://s1.ax1x.com/2022/04/22/L29iXq.png)](https://imgtu.com/i/L29iXq)
 
 # 使用方法
 
-首先安装上面的那个失效项目，然后把里面的代码改为本项目中的代码即可（笔者暂时还不会打包油猴脚本的安装包）
+> 首先确保安装了油猴插件
 
-欢迎熟悉插件开发的同学PR改进，欢迎帮忙打包本项目上传至油猴
+[一键安装](https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js)
 
+[墙内安装](https://cdn.jsdelivr.net/gh/KSroido/UJS_jiaoPing@main/main.user.js)
