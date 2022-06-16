@@ -13,3 +13,10 @@
 [一键安装](https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js)
 
 [墙内安装](https://cdn.jsdelivr.net/gh/KSroido/UJS_jiaoPing@main/main.user.js)
+
+# 其他注意事项
+
+在服务器高峰期的时候可以改如下代码以保证自动点击按钮的成功率
+
+![image](https://user-images.githubusercontent.com/68413810/174051564-ca71c866-36a7-4755-9548-d098134f3cb1.png)
+
