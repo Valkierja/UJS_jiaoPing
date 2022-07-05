@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fuck_ujs_Pj
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.6
 // @description  江苏大学教务系统的自动评教脚本
 // @author       KSroido
 // @homepageURL  https://github.com/KSroido/UJS_jiaoPing/
