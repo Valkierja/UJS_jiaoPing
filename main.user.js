@@ -8,8 +8,7 @@
 // @supportURL   https://github.com/KSroido/UJS_jiaoPing/issues/
 // @downloadURL  https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @updateURL    https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
-// @match        https://webvpn.ujs.edu.cn/http/*/xsjxpj2_2.aspx*
-// @match        https://xuanke*.ujs.edu.cn/*/xsjxpj2_2.aspx*
+// @match        https://*.ujs.edu.cn/*/xsjxpj2_2.aspx*
 // @grant        none
 // ==/UserScript==
 
