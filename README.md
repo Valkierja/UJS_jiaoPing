@@ -10,9 +10,9 @@
 
 > 首先确保安装了油猴插件
 
-[一键安装](https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js)
+[墙外一键安装](https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js)
 
-[一键安装方法二](https://greasyfork.org/en/scripts/447452-ujs-pj)
+[墙外一键安装方法二](https://greasyfork.org/en/scripts/447452-ujs-pj)
 
 [墙内安装](https://cdn.jsdelivr.net/gh/KSroido/UJS_jiaoPing@main/main.user.js)
 
