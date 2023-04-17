@@ -14,29 +14,44 @@
 // ==/UserScript==
 
 function autoPj() {
-    // document.getElementById('wpj_yq').click()//转换到未评价页面
-    var index = 1;
-    while (true) { // 无限循环
-        try {
-            //#wpjkc > li:nth-child(1)
-            var teacher_id = "#wpjkc > li:nth-child(" + index.toString(10) + ")"
-            // console.log(teacher_id)
-            document.querySelector(teacher_id).click() //进入对应教师页面
-            // giveScore()
-            for (var i = 0; i < 9; i++) {
-                $("input[name='pjf']")[i].value= "80"
-        
-            }
-            ++index
-        } catch (e) {
-            if (e instanceof SyntaxError) {
-                // 遇到SyntaxError时停止循环
-                break;
-            } else {
-                throw e; // 不是SyntaxError直接抛出
-            }
-        }
+    document.getElementById('wpj_yq').click()//转换到未评价页面
+   
+
+    //#wpjkc > li:nth-child(1)
+    var teacher_id = "#wpjkc > li:nth-child(1)"
+    // console.log(teacher_id)
+    document.querySelector(teacher_id).click() //进入对应教师页面
+    // giveScore()
+    for (var i = 0; i < 9; i++) {
+        $("input[name='pjf']")[i].value = "80"
     }
+    document.querySelector('#submit').click()
+    location.reload();
+
+
+
+    // while (true) { // 无限循环
+    //     try {
+    //         //#wpjkc > li:nth-child(1)
+    //         var teacher_id = "#wpjkc > li:nth-child(" + index.toString(10) + ")"
+    //         // console.log(teacher_id)
+    //         document.querySelector(teacher_id).click() //进入对应教师页面
+    //         // giveScore()
+    //         for (var i = 0; i < 9; i++) {
+    //             $("input[name='pjf']")[i].value= "80"
+
+    //         }
+    //         document.querySelector('#submit').click()
+    //         ++index
+    //     } catch (e) {
+    //         if (e instanceof SyntaxError) {
+    //             // 遇到SyntaxError时停止循环
+    //             break;
+    //         } else {
+    //             throw e; // 不是SyntaxError直接抛出
+    //         }
+    //     }
+    // }
 } autoPj();
 
 
