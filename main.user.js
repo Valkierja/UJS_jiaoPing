@@ -10,7 +10,7 @@
 // @updateURL    https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @match        https://*.ujs.edu.cn/*kcgcpj_cxKcgcpjxxIndex.html*
 // @grant        none
-// @run-at       document-end
+// @run-at       document-start
 // ==/UserScript==
 
 document.addEventListener("DOMContentLoaded", DOM_ContentReady);
@@ -38,8 +38,8 @@ function autoPj() {
         $("input[name='pjf']")[i].value = "80"
     }
     document.querySelector('#submit').click()
-    location.reload();
-} autoPj();
+    //location.reload();
+};
 
 
     // while (true) { // 无限循环
