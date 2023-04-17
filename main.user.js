@@ -10,20 +10,8 @@
 // @updateURL    https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @match        https://*.ujs.edu.cn/*kcgcpj_cxKcgcpjxxIndex.html*
 // @grant        none
-// @run-at       document-start
+// @run-at       document-end
 // ==/UserScript==
-
-document.addEventListener("DOMContentLoaded", DOM_ContentReady);
-window.addEventListener("load", pageFullyLoaded);
-
-function DOM_ContentReady() {
-    autoPj();
-}
-
-function pageFullyLoaded() {
-    autoPj();
-}
-
 
 function autoPj() {
     // document.getElementById('wpj_yq').click()//转换到未评价页面
@@ -39,7 +27,9 @@ function autoPj() {
     }
     document.querySelector('#submit').click()
     //location.reload();
-}autoPj();
+};
+
+setTimeout(`autoPj()`, 1000)
 
 
     // while (true) { // 无限循环
