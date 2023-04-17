@@ -13,14 +13,24 @@
 // ==/UserScript==
 
 function autoPj() {
+    var score = 60; //教师分数, 默认60分
     var rad_a,rad_b;
     rad_a = "Datagrid1__ctl";
     rad_b = "_rb_0";
-    for(var i=2;i<=11;i++)
-    {
-        document.getElementById(rad_a+i+rad_b).checked = true;
-    }
+    var index = 1;
+    while (true) { // 无限循环
+        try {
+          
+        } catch (e) {
+          if (e instanceof SyntaxError) {
+            // 遇到SyntaxError时停止循环
+            break;
+          } else {
+            throw e; // 不是SyntaxError直接抛出
+          }
+        }
+      }
     //document.getElementById("Datagrid1:__ctl8:rb").checked = true;
-    document.getElementById("txt_pjxx").value = '老师备课充分，授课重点突出。';
+
     document.getElementById("Button1").click();
 } autoPj();
