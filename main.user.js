@@ -27,7 +27,7 @@ function autoPj() {
     }
     document.querySelector('#submit').click()
     location.reload();
-
+} autoPj();
 
 
     // while (true) { // 无限循环
@@ -52,7 +52,7 @@ function autoPj() {
     //         }
     //     }
     // }
-} autoPj();
+
 
 
 // function giveScore() {
