@@ -26,7 +26,7 @@ function pageFullyLoaded() {
 
 
 function autoPj() {
-    document.getElementById('wpj_yq').click()//转换到未评价页面
+    // document.getElementById('wpj_yq').click()//转换到未评价页面
 
 
     //#wpjkc > li:nth-child(1)
@@ -39,7 +39,7 @@ function autoPj() {
     }
     document.querySelector('#submit').click()
     //location.reload();
-};
+}autoPj();
 
 
     // while (true) { // 无限循环
