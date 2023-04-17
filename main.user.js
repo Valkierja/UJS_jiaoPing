@@ -9,8 +9,8 @@
 // @downloadURL  https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @updateURL    https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @match        https://*.ujs.edu.cn/*kcgcpj_cxKcgcpjxxIndex.html*
-// @grant        none
-// @run-at       document-end
+// @require      http://code.jquery.com/jquery-3.x-git.min.js
+/* globals jQuery, $, waitForKeyElements */
 // ==/UserScript==
 
 function autoPj() {
@@ -27,9 +27,9 @@ function autoPj() {
     }
     document.querySelector('#submit').click()
     //location.reload();
-};
+}autoPj();
 
-setTimeout(`autoPj()`, 1000)
+
 
 
     // while (true) { // 无限循环
