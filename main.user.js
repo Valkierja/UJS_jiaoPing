@@ -23,8 +23,8 @@ function giveScore() {
 
     for (; ID_hash_mid_part < 13; i++) {
         var ID_hash = ID_hash_first_part + ID_hash_mid_part_hex + ID_hash_last_part
-        var Selector1 = '#' + ID_hash + ' > input[type=hidden]:nth-child(1)'
-        var Selector2 = '#' + ID_hash + ' > input[type=hidden]:nth-child(2)'
+        var Selector1 = '#' + ID_hash + ' > input[type=hidden]:nth-child(2)'
+        var Selector2 = '#' + ID_hash + ' > input[type=hidden]:nth-child(3)'
         document.querySelector(Selector1).value = score
         document.querySelector(Selector2).value = score
     }
