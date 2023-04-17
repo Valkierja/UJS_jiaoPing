@@ -13,9 +13,21 @@
 // @run-at       document-end
 // ==/UserScript==
 
+document.addEventListener("DOMContentLoaded", DOM_ContentReady);
+window.addEventListener("load", pageFullyLoaded);
+
+function DOM_ContentReady() {
+    autoPj();
+}
+
+function pageFullyLoaded() {
+    autoPj();
+}
+
+
 function autoPj() {
     document.getElementById('wpj_yq').click()//转换到未评价页面
-   
+
 
     //#wpjkc > li:nth-child(1)
     var teacher_id = "#wpjkc > li:nth-child(1)"
