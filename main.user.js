@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Fuck_ujs_Pj
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      1.0
 // @description  江苏大学教务系统的自动评教脚本
 // @author       KSroido
 // @homepageURL  https://github.com/KSroido/UJS_jiaoPing/
 // @supportURL   https://github.com/KSroido/UJS_jiaoPing/issues/
 // @downloadURL  https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @updateURL    https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
-// @match        https://*.ujs.edu.cn/*/xsjxpj2_2.aspx*
+// @match        https://*.ujs.edu.cn/*kcgcpj_cxKcgcpjxxIndex.html*
 // @grant        none
 // ==/UserScript==
 
