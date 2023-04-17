@@ -12,6 +12,26 @@
 // @grant        none
 // ==/UserScript==
 
+function autoPj() {
+    document.getElementById('wpj_yq').click()//转换到未评价页面
+    var index = 1;
+    while (true) { // 无限循环
+        try {
+            var teacher_id = '#wpjkc > li:nth-child(' + index.toString(10) + ')'
+            document.querySelector(teacher_id).click() //进入对应教师页面
+            giveScore()
+            ++index
+        } catch (e) {
+            if (e instanceof SyntaxError) {
+                // 遇到SyntaxError时停止循环
+                break;
+            } else {
+                throw e; // 不是SyntaxError直接抛出
+            }
+        }
+    }
+} autoPj();
+
 function giveScore() {
     var score = '80'; //教师分数, 默认80分
 
@@ -32,23 +52,3 @@ function giveScore() {
 
     document.querySelector('#submit').click()//提交该老师的分数
 }
-
-function autoPj() {
-    document.getElementById('wpj_yq').click()//转换到未评价页面
-    var index = 1;
-    while (true) { // 无限循环
-        try {
-            var teacher_id = '#wpjkc > li:nth-child(' + index.toString(10) + ')'
-            document.querySelector(teacher_id).click() //进入对应教师页面
-            giveScore()
-            ++index
-        } catch (e) {
-            if (e instanceof SyntaxError) {
-                // 遇到SyntaxError时停止循环
-                break;
-            } else {
-                throw e; // 不是SyntaxError直接抛出
-            }
-        }
-    }
-} autoPj();
