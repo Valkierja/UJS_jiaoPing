@@ -19,7 +19,7 @@ function giveScore() {
     var ID_hash_first_part = 'li_2_F9066C26C99'
     var ID_hash_last_part = '89D1E05383001CAC1890'
     var ID_hash_mid_part = 4; // 循环从4开始
-    var ID_hash_mid_part_hex = ID_hash_mid_part.toString(16); // 转成十六进制, 有bug
+    var ID_hash_mid_part_hex = ID_hash_mid_part.toString(16); 
 
     for (; ID_hash_mid_part < 13; ID_hash_mid_part++) {
         var ID_hash = ID_hash_first_part + ID_hash_mid_part_hex + ID_hash_last_part
