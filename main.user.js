@@ -15,7 +15,7 @@
 function giveScore() {
     var score = 80; //教师分数, 默认80分
 
-    //以下是分数框哈希ID, 似乎是定值
+    //以下是分数框哈希ID, 似乎是定值，没经过大范围测试
     var ID_hash_first_part = 'li_2_F9066C26C99'
     var ID_hash_last_part = '89D1E05383001CAC1890'
     var ID_hash_mid_part = 4; // 循环从4开始
@@ -30,20 +30,18 @@ function giveScore() {
     }
 
 
-
-
     document.querySelector('#submit').click()//提交该老师的分数
 }
 
 function autoPj() {
-
-    var rad_a, rad_b;
-    rad_a = "Datagrid1__ctl";
-    rad_b = "_rb_0";
+    document.getElementById('wpj_yq').click()//转换到未评价页面
     var index = 1;
     while (true) { // 无限循环
         try {
-
+            var teacher_id = '#wpjkc > li:nth-child(' + index.toString(10) + ')'
+            document.querySelector(teacher_id).click() //进入对应教师页面
+            giveScore()
+            ++index
         } catch (e) {
             if (e instanceof SyntaxError) {
                 // 遇到SyntaxError时停止循环
@@ -53,7 +51,4 @@ function autoPj() {
             }
         }
     }
-    //document.getElementById("Datagrid1:__ctl8:rb").checked = true;
-
-    document.getElementById("Button1").click();
 } autoPj();
