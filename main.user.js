@@ -16,19 +16,19 @@ function giveScore() {
     var score = '80'; //教师分数, 默认80分
 
     //以下是分数框哈希ID, 似乎是定值，没经过大范围测试
-    var ID_hash_first_part = 'li_2_F9066C26C99'
-    var ID_hash_last_part = '89D1E05383001CAC1890'
+    var ID_hash_first_part = '#li_2_F9066C26C99'
+    var ID_hash_last_part = '89D1E05383001CAC1890 > input[type=hidden]:nth-child(2)'
     var ID_hash_mid_part = 4; // 循环从4开始
-    var ID_hash_mid_part_hex = ID_hash_mid_part.toString(16); 
 
     for (; ID_hash_mid_part < 13; ID_hash_mid_part++) {
-        var ID_hash = ID_hash_first_part + ID_hash_mid_part_hex + ID_hash_last_part
-        var Selector1 = '#' + ID_hash + ' > input[type=hidden]:nth-child(2)'
-        var Selector2 = '#' + ID_hash + ' > input[type=hidden]:nth-child(3)'
+        var ID_hash_mid_part_hex = ID_hash_mid_part.toString(16);
+        var Selector1 = ID_hash_first_part + ID_hash_mid_part_hex + ID_hash_last_part
+        //#li_2_F9066C26C99489D1E05383001CAC1890 > input[type=hidden]:nth-child(2)
+        //#li_2_F9066C26C99589D1E05383001CAC1890 > input[type=hidden]:nth-child(2)
+        // var Selector2 = '#' + ID_hash + ' > input[type=hidden]:nth-child(3)'
         document.querySelector(Selector1).value = score//BUG:分数不是这样写的, 但是到底是怎么写进去分数的没太看懂
-        document.querySelector(Selector2).value = score
+        // document.querySelector(Selector2).value = score
     }
-
 
     document.querySelector('#submit').click()//提交该老师的分数
 }
