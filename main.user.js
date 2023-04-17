@@ -10,6 +10,7 @@
 // @updateURL    https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @match        https://*.ujs.edu.cn/*kcgcpj_cxKcgcpjxxIndex.html*
 // @grant        none
+// @run-at document-end
 // ==/UserScript==
 
 function autoPj() {
