@@ -9,8 +9,9 @@
 // @downloadURL  https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @updateURL    https://raw.githubusercontent.com/KSroido/UJS_jiaoPing/main/main.user.js
 // @match        https://*.ujs.edu.cn/*kcgcpj_cxKcgcpjxxIndex.html*
-// @require      http://code.jquery.com/jquery-3.x-git.min.js
-/* globals jQuery, $, waitForKeyElements */
+// @match        http://*.ujs.edu.cn/*kcgcpj_cxKcgcpjxxIndex.html*
+// @require      https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js
+// @grant        none
 // ==/UserScript==
 
 function autoPj() {
@@ -26,7 +27,7 @@ function autoPj() {
         $("input[name='pjf']")[i].value = "80"
     }
     document.querySelector('#submit').click()
-    //location.reload();
+    location.reload();
 }autoPj();
 
 
