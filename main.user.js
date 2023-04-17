@@ -20,7 +20,7 @@ function autoPj() {
         try {
             //#wpjkc > li:nth-child(1)
             var teacher_id = "#wpjkc > li:nth-child(" + index.toString(10) + ")"
-            console.log(teacher_id)
+            // console.log(teacher_id)
             document.querySelector(teacher_id).click() //进入对应教师页面
             // giveScore()
             for (var i = 0; i < 9; i++) {
