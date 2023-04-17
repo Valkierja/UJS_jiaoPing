@@ -13,13 +13,13 @@
 // ==/UserScript==
 
 function giveScore() {
-    var score = 80; //教师分数, 默认80分
+    var score = '80'; //教师分数, 默认80分
 
     //以下是分数框哈希ID, 似乎是定值，没经过大范围测试
     var ID_hash_first_part = 'li_2_F9066C26C99'
     var ID_hash_last_part = '89D1E05383001CAC1890'
     var ID_hash_mid_part = 4; // 循环从4开始
-    let ID_hash_mid_part_hex = ID_hash_mid_part.toString(16); // 转成十六进制, 有bug
+    var ID_hash_mid_part_hex = ID_hash_mid_part.toString(16); // 转成十六进制, 有bug
 
     for (; ID_hash_mid_part < 13; i++) {
         var ID_hash = ID_hash_first_part + ID_hash_mid_part_hex + ID_hash_last_part
