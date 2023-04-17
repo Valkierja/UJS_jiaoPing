@@ -1,12 +1,14 @@
 # UJS_jiaoPing
+
 江苏大学教评自动化脚本，如果觉得有用，请给一颗星星！非常感谢
 
+**已知问题：2022年11月1日系统升级后本脚本失效，请查看dev分支**
 
 基于此失效项目改编而来：https://greasyfork.org/en/scripts/39472-ujs-pj
 
 [![L29iXq.png](https://s1.ax1x.com/2022/04/22/L29iXq.png)](https://imgtu.com/i/L29iXq)
 
-已知问题：2022年11月1日系统升级后本脚本失效，目前的输入框ID是`id="pjf_EBD9212100EAA3D6E05383001CAC582F"`,后面会跟一段随机哈希, web开发水准有限, 不太懂在js中如何遍历这种,暂时弃坑
+
 
 # 使用方法
 
