@@ -11,14 +11,16 @@
 ![image](https://user-images.githubusercontent.com/68413810/232666146-c49e5fa6-3555-4e0e-bf3c-bacf95e203ec.png)
 
 ```
-function autoPj() {
-    var teacher_id = "#wpjkc > li:nth-child(1)"
-    document.querySelector(teacher_id).click() //进入对应教师页面
-    for (var i = 0; i < 9; i++) {
-        $("input[name='pjf']")[i].value = "80"
-    }
-    document.querySelector('#submit').click()
-}autoPj();
+document.querySelector("#li_2_F9066C26C99489D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#li_2_F9066C26C99589D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#li_2_F9066C26C99689D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#li_2_F9066C26C99789D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#li_2_F9066C26C99889D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#li_2_F9066C26C99989D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#li_2_F9066C26C99a89D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#li_2_F9066C26C99b89D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#li_2_F9066C26C99c89D1E05383001CAC1890 > input[type=hidden]:nth-child(2)").value = '80'
+document.querySelector("#submit").click()
 ```
 
 基于此失效项目改编而来：https://greasyfork.org/en/scripts/39472-ujs-pj
