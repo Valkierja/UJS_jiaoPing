@@ -25,6 +25,8 @@ document.querySelector("#li_2_F9066C26C99C89D1E05383001CAC1890 > input[type=hidd
 document.querySelector("#submit").click()
 ```
 
+以下内容是旧版readme存档
+
 基于此失效项目改编而来：https://greasyfork.org/en/scripts/39472-ujs-pj
 
 [![L29iXq.png](https://s1.ax1x.com/2022/04/22/L29iXq.png)](https://imgtu.com/i/L29iXq)
