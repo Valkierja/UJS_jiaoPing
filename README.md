@@ -4,6 +4,23 @@
 
 **已知问题：2022年11月1日系统升级后本脚本失效，请查看dev分支**
 
+临时解决办法:
+
+你可以在F12检查元素的console控制台面板直接输入以下命令完成单一教师的教评
+
+![image](https://user-images.githubusercontent.com/68413810/232666146-c49e5fa6-3555-4e0e-bf3c-bacf95e203ec.png)
+
+```
+function autoPj() {
+    var teacher_id = "#wpjkc > li:nth-child(1)"
+    document.querySelector(teacher_id).click() //进入对应教师页面
+    for (var i = 0; i < 9; i++) {
+        $("input[name='pjf']")[i].value = "80"
+    }
+    document.querySelector('#submit').click()
+}autoPj();
+```
+
 基于此失效项目改编而来：https://greasyfork.org/en/scripts/39472-ujs-pj
 
 [![L29iXq.png](https://s1.ax1x.com/2022/04/22/L29iXq.png)](https://imgtu.com/i/L29iXq)
